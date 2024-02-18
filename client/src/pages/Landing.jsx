@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -13,14 +13,17 @@ const Landing = () => {
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">
-            <span className="text-secondary">Nourish</span> Your <span className='text-warning'>Week</span>
+            <span className="text-secondary">Nourish</span> Your{" "}
+            <span className="text-warning">Week</span>
           </h1>
           <p className="mb-5 lg:text-xl">
             Get Your Perfect Plate: Tailored weekly meal plans to fuel your
             body, your goals, and your life. Say goodbye to guesswork and hello
             to delicious, nutritious eats!
           </p>
-          <Link to={'/register'} className="btn btn-primary">Get Started</Link>
+          <Link to={"/register"} className="btn btn-primary">
+            Get Started
+          </Link>
         </div>
       </div>
     </div>
