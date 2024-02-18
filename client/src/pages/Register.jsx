@@ -9,8 +9,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
 
-  const handleSubmit = () => {
-  };
+  const handleSubmit = () => {};
 
   return (
     <div className="h-screen w-screen">

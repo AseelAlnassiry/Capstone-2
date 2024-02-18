@@ -16,7 +16,7 @@ const Navbar = () => {
               role="button"
               className="btn btn-circle btn-ghost"
             >
-              <Bars3BottomLeftIcon className="w-8 md:w-10 text-secondary" />
+              <Bars3BottomLeftIcon className="w-8 text-secondary md:w-10" />
             </div>
             <ul
               tabIndex={0}
@@ -82,10 +82,26 @@ const Navbar = () => {
         </div>
 
         {/* Right Side */}
+
         <div className="navbar-end">
-          <button className="btn btn-circle btn-ghost">
-            <MagnifyingGlassIcon className="w-6 md:w-8 text-secondary" />
+          <button
+            className="btn btn-circle btn-ghost"
+            onClick={() => document.getElementById("my_modal_2").showModal()}
+          >
+            <MagnifyingGlassIcon className="w-6 text-secondary md:w-8" />
           </button>
+          <dialog id="my_modal_2" className="modal py-0">
+            <label className="input input-bordered flex items-center gap-2">
+              <input type="text" className="grow" placeholder="Search" />
+              <MagnifyingGlassIcon className="w-5" />
+            </label>
+            <form
+              method="dialog"
+              className="modal-backdrop absolute left-0 top-0 h-screen w-screen"
+            >
+              <button>close</button>
+            </form>
+          </dialog>
         </div>
       </div>
     </nav>
